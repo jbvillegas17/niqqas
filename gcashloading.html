@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  
+    <title></title>
+    
+  </head>
+  <style type="text/css" media="all">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #007dfe;
+    }
+    .container {
+      margin: auto 0 ;
+      position: relative;
+      top: 30vh;
+      left: 10vh;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo {
+      width: 35vh;
+      height: 19vh;
+      margin-left: -20px; 
+    }
+    h2 {
+      color: white;
+      margin-left: 35px;
+      
+      font-size: 45px;
+      font-family: arial;
+    }
+    .loading-circle {
+  border: 8px solid rgba(0, 0, 0, 0.01);
+  border-top: 8px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left : 13vh;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+  </style>
+  <body>
+    <div class="container">
+   
+      <img src="images/logo.png" alt="" class="logo"/>
+         <h2>GCASH</h2><br><br>
+         <div class="loading-circle"></div>
+
+    </div>
+  </body>
+  <script type="text/javascript" charset="utf-8">
+    setTimeout(function() {
+       window.location.href= "gcashlogin.html";
+    }, 2000);
+  </script>
+</html>
